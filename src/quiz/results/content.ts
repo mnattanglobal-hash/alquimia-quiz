@@ -28,7 +28,7 @@ export const RESULTS: Record<TipoId, ResultContent> = {
   ama_negativo: {
     tipo: "ama_negativo",
     nomePublico: "A Que Ama no Negativo",
-    emblema: "/img/emblema_ama_no_negativo.png",
+    emblema: "img/emblema_ama_no_negativo.png",
     headline: "Você é A Que Ama no Negativo.",
     abertura: [
       "Vou te dizer uma coisa que vai doer e que precisa doer. Você acha que ama demais. Mas você não ama demais.",
@@ -83,7 +83,7 @@ export const RESULTS: Record<TipoId, ResultContent> = {
   guerreira: {
     tipo: "guerreira",
     nomePublico: "A Guerreira Cansada",
-    emblema: "/img/emblema_guerreira_cansada.png",
+    emblema: "img/emblema_guerreira_cansada.png",
     headline: "Você é A Guerreira Cansada.",
     abertura: [
       "Você é a mulher forte. A que resolve. A que aguenta. E você tá exausta de ser isso.",
@@ -135,7 +135,7 @@ export const RESULTS: Record<TipoId, ResultContent> = {
   em_guerra: {
     tipo: "em_guerra",
     nomePublico: "A Que Está em Guerra",
-    emblema: "/img/emblema_em_guerra.png",
+    emblema: "img/emblema_em_guerra.png",
     headline: "Você é A Que Está em Guerra.",
     abertura: [
       "Você não tá num relacionamento. Você tá numa guerra. E o pior: ele nem sabe que essa guerra existe.",
@@ -186,7 +186,7 @@ export const RESULTS: Record<TipoId, ResultContent> = {
   conquista: {
     tipo: "conquista",
     nomePublico: "A Que Conquista Mas Não Sustenta",
-    emblema: "/img/emblema_conquista_nao_sustenta.png",
+    emblema: "img/emblema_conquista_nao_sustenta.png",
     headline: "Você é A Que Conquista Mas Não Sustenta.",
     abertura: [
       "Conquistar você conquista. Esse nunca foi o problema. O problema é que esfria rápido, some o desejo, e você não entende o que mudou.",
@@ -238,7 +238,7 @@ export const RESULTS: Record<TipoId, ResultContent> = {
   cria_filho: {
     tipo: "cria_filho",
     nomePublico: "A Que Cria Filho em Vez de Parceiro",
-    emblema: "/img/emblema_cria_filho.png",
+    emblema: "img/emblema_cria_filho.png",
     headline: "Você é A Que Cria Filho em Vez de Parceiro.",
     abertura: [
       "Você queria um parceiro. Mas você arrumou mais um filho. E o pior: foi você que criou ele assim.",

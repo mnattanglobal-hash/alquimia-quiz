@@ -31,7 +31,7 @@ export default function Questions({
     <section className="py-10 md:py-14 min-h-screen">
       <div className="wrap narrow">
         <img
-          src="/img/Alquimia-Logo-Horizontal-Gold.png"
+          src="img/Alquimia-Logo-Horizontal-Gold.png"
           alt="Escola de Alquimia Ascensional"
           className="mx-auto h-auto w-[150px] mb-8"
         />

@@ -42,7 +42,7 @@ export default function ResultPage({
       <section className="bg-hero-glow text-center pt-9 pb-12 md:pb-16">
         <div className="wrap">
           <img
-            src="/img/Alquimia-Logo-Horizontal-Gold.png"
+            src="img/Alquimia-Logo-Horizontal-Gold.png"
             alt="Escola de Alquimia Ascensional"
             className="mx-auto h-auto w-[180px] mb-7"
           />
