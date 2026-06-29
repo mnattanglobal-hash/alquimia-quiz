@@ -21,7 +21,7 @@ export default function EmailCapture({
 
   return (
     <section className="bg-hero-glow min-h-screen flex items-center py-12">
-      <div className="wrap narrow text-center">
+      <div className="wrap narrow w-full text-center">
         <img
           src="img/Alquimia-Logo-Horizontal-Gold.png"
           alt="Escola de Alquimia Ascensional"

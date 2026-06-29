@@ -3,7 +3,7 @@ import Cta from "../../components/ui/Cta";
 export default function Abertura({ onStart }: { onStart: () => void }) {
   return (
     <section className="bg-hero-glow text-center min-h-screen flex items-center py-12">
-      <div className="wrap">
+      <div className="wrap w-full">
         <img
           src="img/Alquimia-Logo-Horizontal-Gold.png"
           alt="Escola de Alquimia Ascensional"
