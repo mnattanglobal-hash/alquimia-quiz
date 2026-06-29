@@ -42,6 +42,14 @@ export default function App() {
   }
 
   function handleEmail(firstname: string, email: string) {
+    // Eventos de conversão de lead (Meta Pixel + Google Analytics)
+    const w = window as unknown as {
+      fbq?: (...a: unknown[]) => void;
+      gtag?: (...a: unknown[]) => void;
+    };
+    if (typeof w.fbq === "function") w.fbq("track", "Lead");
+    if (typeof w.gtag === "function") w.gtag("event", "generate_lead");
+
     if (result) {
       submitLead({ firstname, email }, result);
       const url = new URL(window.location.href);

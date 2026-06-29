@@ -3,6 +3,7 @@ import Eyebrow from "../../components/ui/Eyebrow";
 import Quote from "../../components/ui/Quote";
 import FlameDivider from "../../components/ui/FlameDivider";
 import Cta from "../../components/ui/Cta";
+import VideoPlayer from "../../components/ui/VideoPlayer";
 import { RESULTS } from "./content";
 import type { Part } from "./content";
 import type { TipoId, Urgencia } from "../types";
@@ -67,6 +68,15 @@ export default function ResultPage({
       <Section narrow>
         <FlameDivider lineOnly className="mb-7" />
         <Parts parts={r.remedio} />
+      </Section>
+
+      {/* VSL — Uma palavra da Durga (vídeo do produto recomendado pela urgência) */}
+      <Section band narrow center>
+        <Eyebrow className="mb-4">Uma palavra da Durga</Eyebrow>
+        <VideoPlayer
+          src={urgencia === "aguda" ? "vsl_desapego.mp4" : "vsl_mecanica.mp4"}
+          captions={urgencia === "aguda" ? "vsl_desapego.vtt" : "vsl_mecanica.vtt"}
+        />
       </Section>
 
       {/* Seção 4 — Bloco intercambiável (recomendação) */}
