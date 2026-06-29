@@ -1,14 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 
-type VideoPlayerProps = {
-  src: string;
-  captions?: string;
-};
+type VideoPlayerProps = { src: string; captions?: string };
 
-/**
- * Player de vídeo 16:9 — autoplay MUTADO + legenda (WebVTT, sempre visível) +
- * botão de som. Recebe src/captions por prop (reuso pros 2 produtos no quiz).
- */
 export default function VideoPlayer({ src, captions }: VideoPlayerProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [muted, setMuted] = useState(true);
@@ -17,9 +10,7 @@ export default function VideoPlayer({ src, captions }: VideoPlayerProps) {
     const v = videoRef.current;
     if (!v) return;
     const showCaptions = () => {
-      for (let i = 0; i < v.textTracks.length; i++) {
-        v.textTracks[i].mode = "showing";
-      }
+      for (let i = 0; i < v.textTracks.length; i++) v.textTracks[i].mode = "showing";
     };
     showCaptions();
     v.addEventListener("loadedmetadata", showCaptions);
@@ -34,19 +25,27 @@ export default function VideoPlayer({ src, captions }: VideoPlayerProps) {
     if (!v.muted) v.play().catch(() => {});
     setMuted(v.muted);
   }
+  function togglePlay() {
+    const v = videoRef.current;
+    if (!v) return;
+    if (v.paused) v.play().catch(() => {});
+    else v.pause();
+  }
 
   return (
     <div className="relative w-full aspect-video rounded-md overflow-hidden photo bg-black">
       <video
         ref={videoRef}
         key={src}
-        className="absolute inset-0 h-full w-full object-contain bg-black"
+        className="absolute inset-0 h-full w-full object-contain bg-black cursor-pointer"
         src={src}
         autoPlay
         muted
         playsInline
-        controls
         preload="auto"
+        onClick={togglePlay}
+        controlsList="nodownload nofullscreen noremoteplayback"
+        disablePictureInPicture
       >
         {captions && (
           <track kind="captions" srcLang="pt" label="Português" default src={captions} />
