@@ -1,8 +1,8 @@
 // Placeholders centralizados — Quiz Alquimia Ascensional.
 
 // Checkouts dos produtos recomendados nos blocos de resultado.
-export const CHECKOUT_DESAPEGO = "{{CHECKOUT_DESAPEGO}}"; // Desapego de Uma Vez R$147
-export const CHECKOUT_MECANICA = "{{CHECKOUT_MECANICA}}"; // A Mecânica do Amor R$197
+export const CHECKOUT_DESAPEGO = "https://checkout.thebank.com.br/7473493593052389376"; // Desapego de Uma Vez R$147
+export const CHECKOUT_MECANICA = "https://checkout.thebank.com.br/7473492511508979712"; // A Mecânica do Amor R$197
 
 // Integração Mautic (captura de email + tags). Ponto de integração:
 // no submit, POSTa firstname/email pro form do Mautic e aplica as tags calculadas.
