@@ -1,6 +1,5 @@
 import Eyebrow from "../../components/ui/Eyebrow";
 import Cta from "../../components/ui/Cta";
-import DurgaPhoto from "../../components/ui/DurgaPhoto";
 
 export default function Abertura({ onStart }: { onStart: () => void }) {
   return (
@@ -12,10 +11,10 @@ export default function Abertura({ onStart }: { onStart: () => void }) {
           className="mx-auto h-auto w-[200px] sm:w-[224px] mb-7"
         />
 
-        <DurgaPhoto
-          tall
-          className="mb-7 max-w-narrow mx-auto"
-          description="Durga olhando direto pra câmera, fundo escuro, expressão séria mas acolhedora — sem sorriso de coach."
+        <img
+          src="img/casal_abertura.jpg"
+          alt="Durga e o companheiro"
+          className="block w-full max-w-narrow mx-auto h-auto rounded-md border border-[color:var(--border)] shadow-[var(--card-shadow)] mb-7"
         />
 
         <Eyebrow className="mb-3">

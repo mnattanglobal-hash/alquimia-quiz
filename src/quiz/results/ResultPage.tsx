@@ -2,7 +2,6 @@ import Section from "../../components/ui/Section";
 import Eyebrow from "../../components/ui/Eyebrow";
 import Quote from "../../components/ui/Quote";
 import FlameDivider from "../../components/ui/FlameDivider";
-import DurgaPhoto from "../../components/ui/DurgaPhoto";
 import Cta from "../../components/ui/Cta";
 import { RESULTS } from "./content";
 import type { Part } from "./content";
@@ -83,10 +82,10 @@ export default function ResultPage({
 
       {/* Seção 5 — Fecho */}
       <Section narrow>
-        <DurgaPhoto
-          tall
-          className="mb-7"
-          description="Durga, meio corpo, olhar direto na câmera. Fecho — verdade, não simpatia."
+        <img
+          src="img/casal_fecho.jpg"
+          alt="Durga e o companheiro, hoje"
+          className="block w-full max-w-narrow mx-auto h-auto rounded-md border border-[color:var(--border)] shadow-[var(--card-shadow)] mb-7"
         />
         <Parts parts={r.fecho} />
       </Section>
