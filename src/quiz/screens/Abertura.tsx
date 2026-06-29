@@ -1,4 +1,3 @@
-import Eyebrow from "../../components/ui/Eyebrow";
 import Cta from "../../components/ui/Cta";
 
 export default function Abertura({ onStart }: { onStart: () => void }) {
@@ -12,18 +11,12 @@ export default function Abertura({ onStart }: { onStart: () => void }) {
         />
 
         <img
-          src="img/durga_solo.jpg"
-          alt="Durga, hoje"
-          className="block w-full max-w-narrow mx-auto h-auto rounded-md border border-[color:var(--border)] shadow-[var(--card-shadow)] mb-7"
+          src="img/quiz_hero.jpg"
+          alt="Os nomes mudam. A sensação é sempre a mesma. Descubra qual padrão comanda o seu jeito de amar."
+          className="block w-full mx-auto h-auto rounded-md shadow-[var(--card-shadow)] mb-7"
         />
 
-        <Eyebrow className="mb-3">
-          2 minutos · 9 perguntas · a verdade que ninguém te disse ainda
-        </Eyebrow>
-        <h1 className="text-[clamp(32px,7vw,52px)] mb-5">
-          Os nomes mudam.
-          <br />A sensação é <span className="text-gold">sempre a mesma.</span>
-        </h1>
+        <h1 className="sr-only">Os nomes mudam. A sensação é sempre a mesma.</h1>
         <p className="text-[18px] max-w-[600px] mx-auto mb-7">
           Você já tentou de tudo pra mudar como você ama e nada segura. É porque
           você tá mexendo no errado. Existe um padrão operando por baixo de tudo.
