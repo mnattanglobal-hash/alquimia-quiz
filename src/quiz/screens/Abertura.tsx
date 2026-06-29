@@ -12,8 +12,8 @@ export default function Abertura({ onStart }: { onStart: () => void }) {
         />
 
         <img
-          src="img/casal_abertura.jpg"
-          alt="Durga e o companheiro"
+          src="img/durga_solo.jpg"
+          alt="Durga, hoje"
           className="block w-full max-w-narrow mx-auto h-auto rounded-md border border-[color:var(--border)] shadow-[var(--card-shadow)] mb-7"
         />
 
