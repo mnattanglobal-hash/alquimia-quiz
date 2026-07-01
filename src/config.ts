@@ -1,13 +1,13 @@
 // Placeholders centralizados — Quiz Alquimia Ascensional.
 
 // Checkouts dos produtos recomendados nos blocos de resultado.
-export const CHECKOUT_DESAPEGO = "https://checkout.thebank.com.br/7473493593052389376"; // Desapego de Uma Vez R$147
-export const CHECKOUT_MECANICA = "https://checkout.thebank.com.br/7473492511508979712"; // A Mecânica do Amor R$197
+export const CHECKOUT_DESAPEGO = "{{CHECKOUT_DESAPEGO}}"; // Desapego de Uma Vez R$147
+export const CHECKOUT_MECANICA = "{{CHECKOUT_MECANICA}}"; // A Mecânica do Amor R$197
 
-// Integração Mautic (captura de email + tags). Ponto de integração:
-// no submit, POSTa firstname/email pro form do Mautic e aplica as tags calculadas.
-// Enquanto não houver endpoint, o submit só avança (lead fica em memória/console).
-export const MAUTIC_FORM_ACTION = "{{MAUTIC_FORM_ACTION}}";
+// Captura de lead → Google Sheets (via Apps Script Web App do cliente).
+// Cada conclusão do quiz grava Nome + Email + Tipo + Urgência numa linha da planilha.
+export const LEADS_ENDPOINT =
+  "https://script.google.com/macros/s/AKfycbyn5IKCTS5ONnyYpIOcTYrda2hxOcfcy6HLpvSRvt-Mb-JsZFdDI3yPm909dG6zWnyEGQ/exec";
 
 // Tags por tipo/urgência (referência pro Mautic).
 export const TIPO_TAG: Record<string, string> = {
