@@ -9,6 +9,10 @@ export const CHECKOUT_MECANICA = "{{CHECKOUT_MECANICA}}"; // A Mecânica do Amor
 export const LEADS_ENDPOINT =
   "https://script.google.com/macros/s/AKfycbyn5IKCTS5ONnyYpIOcTYrda2hxOcfcy6HLpvSRvt-Mb-JsZFdDI3yPm909dG6zWnyEGQ/exec";
 
+// Webhook n8n → cria assinante no Listmonk e dispara sequência de emails.
+export const N8N_WEBHOOK =
+  "https://auto.alquimiaascensional.com/webhook/quiz-lead";
+
 // Tags por tipo/urgência (referência pro Mautic).
 export const TIPO_TAG: Record<string, string> = {
   ama_negativo: "tipo-ama-no-negativo",
